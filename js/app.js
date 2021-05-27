@@ -24,4 +24,10 @@ for (let content of panelContent) {
   const thirdParagh = document.createElement("p");
   panel.appendChild(thirdParagh);
   thirdParagh.innerHTML = `${content.text[2]}`;
+
+  panel.addEventListener("click", () => {
+    firtstParagh.classList.add("show-text");
+    thirdParagh.classList.add("show-text");
+  })
 }
+

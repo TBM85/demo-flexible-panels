@@ -13,6 +13,17 @@ html {
         flex-direction: column;
         flex: 1;
         justify-content: space-around;
+        cursor: pointer;
+        :first-child {
+          transform: translateY(-10em);
+        }
+        :last-child {
+          transform: translateY(10em);
+        }
+        .show-text {
+          transform: translateY(0);
+          transition: transform 0.5s;
+        }
         p {
           margin: 0;
         }

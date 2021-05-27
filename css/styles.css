@@ -18,6 +18,20 @@ html body .panels .panel {
   flex-direction: column;
   flex: 1;
   justify-content: space-around;
+  cursor: pointer;
+}
+
+html body .panels .panel :first-child {
+  transform: translateY(-10em);
+}
+
+html body .panels .panel :last-child {
+  transform: translateY(10em);
+}
+
+html body .panels .panel .show-text {
+  transform: translateY(0);
+  transition: transform 0.5s;
 }
 
 html body .panels .panel p {
