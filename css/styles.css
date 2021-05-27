@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
+html {
+  font-family: 'Graduate', cursive;
+  text-align: center;
+  min-height: 100vh;
+}
+
+html body {
+  margin: 0;
+}
+/*# sourceMappingURL=styles.css.map */
