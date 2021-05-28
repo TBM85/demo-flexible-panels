@@ -19,23 +19,32 @@ html body .panels .panel {
   flex: 1;
   justify-content: space-around;
   cursor: pointer;
+  min-width: 2em;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 1s;
 }
 
 html body .panels .panel :first-child {
-  transform: translateY(-10em);
+  transform: translateY(-5em);
+  opacity: 0;
 }
 
 html body .panels .panel :last-child {
-  transform: translateY(10em);
+  transform: translateY(5em);
+  opacity: 0;
 }
 
 html body .panels .panel .show-text {
   transform: translateY(0);
-  transition: transform 0.5s;
+  opacity: 1;
 }
 
 html body .panels .panel p {
   margin: 0;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 1s;
+}
+
+html body .panels .open-horizontal {
+  flex: 5 !important;
 }
 
 html body .panels .panel-one {

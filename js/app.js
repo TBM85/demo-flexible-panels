@@ -26,8 +26,9 @@ for (let content of panelContent) {
   thirdParagh.innerHTML = `${content.text[2]}`;
 
   panel.addEventListener("click", () => {
-    firtstParagh.classList.add("show-text");
-    thirdParagh.classList.add("show-text");
+    firtstParagh.classList.toggle("show-text");
+    thirdParagh.classList.toggle("show-text");
+    panel.classList.toggle("open-horizontal");
   })
 }
 
