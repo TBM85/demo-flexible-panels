@@ -25,10 +25,20 @@ for (let content of panelContent) {
   panel.appendChild(thirdParagh);
   thirdParagh.innerHTML = `${content.text[2]}`;
 
+  // When a panel is clicked, it opens
   panel.addEventListener("click", () => {
-    firtstParagh.classList.toggle("show-text");
-    thirdParagh.classList.toggle("show-text");
-    panel.classList.toggle("open-horizontal");
+    firtstParagh.classList.add("show-text");
+    thirdParagh.classList.add("show-text");
+    panel.classList.add("open-horizontal");
+  })
+
+  // When the panel transition ends, it closes
+  panel.addEventListener("transitionend", (event) => {
+    if (event.propertyName.includes("flex")) {
+      firtstParagh.classList.remove("show-text");
+      thirdParagh.classList.remove("show-text");
+      panel.classList.remove("open-horizontal");
+    };
   })
 }
 

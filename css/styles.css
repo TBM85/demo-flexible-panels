@@ -20,17 +20,23 @@ html body .panels .panel {
   justify-content: space-around;
   cursor: pointer;
   min-width: 2em;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 1s;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 2.5s;
 }
 
 html body .panels .panel :first-child {
-  transform: translateY(-5em);
+  transform: translateY(-2em);
   opacity: 0;
 }
 
 html body .panels .panel :last-child {
-  transform: translateY(5em);
+  transform: translateY(2em);
   opacity: 0;
+}
+
+html body .panels .panel :nth-child(2) {
+  color: #555;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 1.2em;
 }
 
 html body .panels .panel .show-text {
@@ -40,7 +46,7 @@ html body .panels .panel .show-text {
 
 html body .panels .panel p {
   margin: 0;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 1s;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 2.5s;
 }
 
 html body .panels .open-horizontal {
